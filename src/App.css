@@ -123,3 +123,16 @@ input[type="number"] {
   padding: 5px 10px;
   margin: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .basket__item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .products__inputGroup {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

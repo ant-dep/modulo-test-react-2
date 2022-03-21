@@ -23,9 +23,20 @@ function App() {
   }, []);
 
   const dispatchEvent = ({ type, payload }) => {
+    console.log(type, payload);
     switch (type) {
       case "ADD_TO_BASKET":
-        setBasket([...basket, payload]);
+        if (basket.find((item) => item.id === payload.id)) {
+          setBasket(
+            basket.map((item) =>
+              item.id === payload.id
+                ? { ...item, quantity: item.quantity + payload.quantity }
+                : item
+            )
+          );
+        } else {
+          setBasket([...basket, payload]);
+        }
         break;
       case "MODIFY_BASKET":
         setBasket(
