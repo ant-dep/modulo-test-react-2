@@ -2,9 +2,9 @@ import { AppContext } from "./context";
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Header from "./Header";
-import Items from "./Items";
-import Panier from "./Panier";
+import Header from "./components/Header";
+import Items from "./components/Items";
+import Panier from "./components/Panier";
 
 function App() {
   const [basket, setBasket] = useState([]);

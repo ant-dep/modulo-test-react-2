@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AppContext } from "./context";
+import { AppContext } from "../context";
 
 function Panier() {
   const { items, basket, dispatchEvent } = useContext(AppContext);

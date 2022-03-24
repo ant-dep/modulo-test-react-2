@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AppContext } from "./context";
+import { AppContext } from "../context";
 
 function Items() {
   const { items, dispatchEvent } = useContext(AppContext);

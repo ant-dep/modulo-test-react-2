@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { AppContext } from "./context";
+import { AppContext } from "../context";
 import { Link } from "react-router-dom";
 
 function Header() {
